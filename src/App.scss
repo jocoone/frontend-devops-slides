@@ -1,0 +1,13 @@
+.children {
+  padding: 25px;
+}
+
+.highlight {
+  color: #e9531d;
+}
+
+@keyframes slide {
+  100% {
+    transform: translateX(-2000px) rotate(250deg);
+  }
+}
