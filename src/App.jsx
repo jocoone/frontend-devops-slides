@@ -22,6 +22,7 @@ function App() {
         width: '100%',
         height: '100%',
         margin: 0,
+        fragmentInURL: true,
       })
       console.log('loaded')
     }, 600)
@@ -158,6 +159,10 @@ function App() {
       </Slide>
       <Slide>
         <h2>npm registry</h2>
+        <h3>
+          <code className="highlight">npm set registry</code>{' '}
+          <code>http://localhost:[port]</code>
+        </h3>
         <p className="r-stack">
           <img
             className="fragment fade-out"
@@ -208,6 +213,144 @@ function App() {
             <code>[local tar file]</code>
           </li>
         </ul>
+      </Slide>
+      <Slide>
+        <h2>Hands on!</h2>
+        <h3>let's fork 🍴</h3>
+        <h4>
+          <a href="https://github.com/sh33dafi/workshop-devops-fe-angular">
+            https://github.com/sh33dafi/workshop-devops-fe-angular
+          </a>
+        </h4>
+        <h4>
+          <a href="https://github.com/sh33dafi/workshop-devops-fe-react">
+            https://github.com/sh33dafi/workshop-devops-fe-react
+          </a>
+        </h4>
+        <h4>
+          <a href="https://github.com/sh33dafi/workshop-devops-fe-vue">
+            https://github.com/sh33dafi/workshop-devops-fe-vue
+          </a>
+        </h4>
+      </Slide>
+
+      <Slide>
+        <h2>Deploying</h2>
+        <h3>Millions of options</h3>
+        <h4>What do you know?</h4>
+        <div
+          className="categories"
+          style={{
+            display: 'flex',
+            justifyContent: 'space-around',
+            marginTop: '55px',
+          }}
+        >
+          <div
+            className="fragment"
+            style={{
+              maxWidth: '25vw',
+            }}
+          >
+            <h5 className="highlight">Through backend web MVC Framework</h5>
+            <div
+              style={{
+                fontSize: '.5em',
+              }}
+            >
+              (Spring, Node/Express, .NET core, ...)
+            </div>
+          </div>
+          <div
+            className="fragment"
+            style={{
+              maxWidth: '25vw',
+            }}
+          >
+            <h5 className="highlight">Static webserver (FTP)</h5>
+          </div>
+          <div
+            className="fragment"
+            style={{
+              maxWidth: '25vw',
+            }}
+          >
+            <h5 className="highlight">Hosted on platform</h5>
+            <div
+              style={{
+                fontSize: '.5em',
+              }}
+            >
+              (Github pages, Azure, AWS, Vercel, Netlify, ...)
+            </div>
+          </div>
+        </div>
+      </Slide>
+      <Slide>
+        <h2>Webserver</h2>
+        <p className="fragment">
+          <img style={{ width: '60vw' }} src="/webserver.png" alt="webserver" />
+        </p>
+      </Slide>
+      <Slide>
+        <h2>Docker</h2>
+        <p>
+          <img style={{ width: '60vw' }} src="/docker.png" alt="docker" />
+        </p>
+      </Slide>
+      <Slide>
+        <h2>Docker</h2>
+        <h3>Containerization</h3>
+        <p>
+          <img
+            style={{ width: '35vw' }}
+            src="/docker_explained.png"
+            alt="docker"
+          />
+        </p>
+      </Slide>
+      <Slide>
+        <h2>Docker</h2>
+        <h3>Containerization</h3>
+        <h4>Container vs Images</h4>
+      </Slide>
+      <Slide>
+        <h2>Docker</h2>
+        <h3>nginx</h3>
+        <h4>Containerized static webserver</h4>
+      </Slide>
+      <Slide>
+        <h2>Docker nginx</h2>
+        <h5>
+          <a href="https://www.nginx.com/">nginx.com</a>
+        </h5>
+        <ol>
+          <li className="fragment">
+            Create <code>nginx-location.conf</code>
+          </li>
+          <li className="fragment">
+            Create <code>Dockerfile</code>
+          </li>
+          <li className="fragment">
+            <code className="highlight">
+              docker build . -t workshop/angular{' '}
+            </code>
+          </li>
+          <li className="fragment">
+            <code className="highlight">
+              docker run -d -p 80:80 workshop/angular
+            </code>
+          </li>
+          <li className="fragment">
+            <a
+              href="http://localhost"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              localhost
+            </a>
+          </li>
+        </ol>
       </Slide>
     </div>
   )
