@@ -127,7 +127,10 @@ function App() {
         </h1>
       </Slide>
       <Slide>
-        <h2 style={{ textAlign: 'left' }}>Difference Apps vs Libraries</h2>
+        <h2 style={{ textAlign: 'left' }}>
+          Difference <span className="highlight">Apps</span> vs{' '}
+          <span className="highlight">Libraries</span>
+        </h2>
         <h3 style={{ textAlign: 'left' }}>More or less the same</h3>
         <h4 style={{ textAlign: 'left' }}>Difference in "Deploying"</h4>
         <p style={{ textAlign: 'left' }}>
@@ -187,6 +190,24 @@ function App() {
             alt="nexus"
           />
         </p>
+      </Slide>
+      <Slide>
+        <h2>Releasing Libraries</h2>
+        <h3>locally</h3>
+        <ul>
+          <li>
+            <code className="highlight">npm link</code>
+          </li>
+          <li>
+            <code className="highlight">npm set registry</code>{' '}
+            <code>http://localhost:[port]</code>
+          </li>
+          <li>
+            <code className="highlight">npm pack</code> &{' '}
+            <code className="highlight">npm install</code>{' '}
+            <code>[local tar file]</code>
+          </li>
+        </ul>
       </Slide>
     </div>
   )
