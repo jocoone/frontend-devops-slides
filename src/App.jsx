@@ -422,6 +422,9 @@ function App() {
         </h3>
         <h4>example: node/express backend</h4>
       </Slide>
+      <Slide>
+        <h1>Pipelines</h1>
+      </Slide>
     </div>
   )
 }
