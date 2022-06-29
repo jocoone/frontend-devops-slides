@@ -351,6 +351,9 @@ function App() {
           <li className="fragment">
             Create <code>Dockerfile</code>
           </li>
+          <li>
+            <code>npm run build</code>
+          </li>
           <li className="fragment">
             <code className="highlight">
               docker build . -t workshop/angular{' '}
@@ -391,14 +394,33 @@ function App() {
         </p>
       </Slide>
       <Slide>
+        <h2>Docker builds</h2>
+        <h3>Publish docker containers (in same registry providers)</h3>
+        <p>
+          <img style={{ height: '30vh' }} src={database} alt="database" />
+        </p>
+      </Slide>
+      <Slide>
         <h2>Shared memory</h2>
-        <h3>Create config folder somewhere on your PC</h3>
+        <h3>Task: Create config folder somewhere on your PC</h3>
         <p>
           <h4>
             Change docker start command with{' '}
             <code className="highlight">-v</code> option
           </h4>
         </p>
+      </Slide>
+      <Slide>
+        <h2>Shared memory</h2>
+        <h3>Task: Create feature toggle read from the shared config</h3>
+      </Slide>
+      <Slide>
+        <h2>Docker compose</h2>
+        <h3>
+          Task: Create a dummy backend with rest call and build into docker
+          container
+        </h3>
+        <h4>example: node/express backend</h4>
       </Slide>
     </div>
   )
