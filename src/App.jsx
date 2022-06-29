@@ -161,7 +161,7 @@ function App() {
         <h2>npm registry</h2>
         <h3>
           <code className="highlight">npm set registry</code>{' '}
-          <code>http://localhost:[port]</code>
+          <code>https://registry.npmjs.org/</code>
         </h3>
         <p className="r-stack">
           <img
@@ -194,6 +194,19 @@ function App() {
             src={nexus}
             alt="nexus"
           />
+        </p>
+      </Slide>
+      <Slide>
+        <h2>npm registry</h2>
+        <h3>
+          <code className="highlight">npm set registry</code>{' '}
+          <code>http://my-internal-registry.local</code>
+        </h3>
+      </Slide>
+      <Slide>
+        <h2>npm registry</h2>
+        <p>
+          <img style={{ width: '60vw' }} src="/npmproxy.png" alt="proxy" />
         </p>
       </Slide>
       <Slide>
@@ -365,6 +378,9 @@ function App() {
           <code>Anti pattern</code> to do multiple builds for different
           environments
         </h3>
+        <pre>
+          <code className="highlight">COPY config.json /a/path/to/serve</code>
+        </pre>
         <h3>Better to work with config</h3>
         <p>
           <img
@@ -372,6 +388,16 @@ function App() {
             src="/volumes-shared-storage.svg"
             alt="docker"
           />
+        </p>
+      </Slide>
+      <Slide>
+        <h2>Shared memory</h2>
+        <h3>Create config folder somewhere on your PC</h3>
+        <p>
+          <h4>
+            Change docker start command with{' '}
+            <code className="highlight">-v</code> option
+          </h4>
         </p>
       </Slide>
     </div>
