@@ -412,6 +412,10 @@ function App() {
       </Slide>
       <Slide>
         <h2>Shared memory</h2>
+        <h3>Task: Environment flag in config file and show in your frontend</h3>
+      </Slide>
+      <Slide>
+        <h2>Shared memory</h2>
         <h3>Task: Create feature toggle read from the shared config</h3>
       </Slide>
       <Slide>
