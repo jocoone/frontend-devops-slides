@@ -260,6 +260,13 @@ function App() {
             >
               (Spring, Node/Express, .NET core, ...)
             </div>
+            <div
+              style={{
+                fontSize: '.5em',
+              }}
+            >
+              (Also deployed on a webserver)
+            </div>
           </div>
           <div
             className="fragment"
@@ -281,7 +288,7 @@ function App() {
                 fontSize: '.5em',
               }}
             >
-              (Github pages, Azure, AWS, Vercel, Netlify, ...)
+              (Github pages, Azure, AWS, Vercel, Netlify, Firebase, ...)
             </div>
           </div>
         </div>
@@ -351,6 +358,21 @@ function App() {
             </a>
           </li>
         </ol>
+      </Slide>
+      <Slide>
+        <h2>Project builds</h2>
+        <h3>
+          <code>Anti pattern</code> to do multiple builds for different
+          environments
+        </h3>
+        <h3>Better to work with config</h3>
+        <p>
+          <img
+            style={{ width: '60vw' }}
+            src="/volumes-shared-storage.svg"
+            alt="docker"
+          />
+        </p>
       </Slide>
     </div>
   )
