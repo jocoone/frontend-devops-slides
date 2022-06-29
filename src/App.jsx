@@ -429,6 +429,13 @@ function App() {
       <Slide>
         <h1>Pipelines</h1>
       </Slide>
+      <Slide>
+        <h1>
+          <a href="https://github.com/jocoone/frontend-devops-slides.git">
+            https://github.com/jocoone/frontend-devops-slides.git
+          </a>
+        </h1>
+      </Slide>
     </div>
   )
 }
