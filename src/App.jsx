@@ -351,7 +351,7 @@ function App() {
           <li className="fragment">
             Create <code>Dockerfile</code>
           </li>
-          <li>
+          <li className="fragment">
             <code>npm run build</code>
           </li>
           <li className="fragment">
@@ -384,7 +384,7 @@ function App() {
         <pre>
           <code className="highlight">COPY config.json /a/path/to/serve</code>
         </pre>
-        <h3>Better to work with config</h3>
+        <h3>Better to work with external config</h3>
         <p>
           <img
             style={{ width: '60vw' }}
@@ -428,6 +428,16 @@ function App() {
       </Slide>
       <Slide>
         <h1>Pipelines</h1>
+      </Slide>
+      <Slide>
+        <h3>Pipeline</h3>
+        <p>
+          <img src={cicd} alt="cicd" />
+        </p>
+      </Slide>
+      <Slide>
+        <h3>Pipeline</h3>
+        <h4>Github actions</h4>
       </Slide>
       <Slide>
         <h1>
